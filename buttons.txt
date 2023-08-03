@@ -1,0 +1,16 @@
+Following reprogramable buttons were seen by running:
+sudo logid -v -c /filepath
+
+CID  | reprog? | fn key? | mouse key? | gesture support?
+0x50 |         |         | YES        | 
+0x51 |         |         | YES        | 
+0x52 | YES     |         | YES        | YES
+0x53 | YES     |         | YES        | YES
+0x56 | YES     |         | YES        | YES
+0xc3 | YES     |         | YES        | YES
+0xc4 | YES     |         | YES        | YES
+0xd7 | YES     |         |            | YES
+Thumb wheel detected (0x2150), capabilities:
+timestamp | touch | proximity | single tap
+YES       | YES   | YES       | YES       
+Thumb wheel resolution: native (18), diverted (120)
