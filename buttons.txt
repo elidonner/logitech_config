@@ -1,6 +1,7 @@
 Following reprogramable buttons were seen by running:
 sudo logid -v -c /filepath
 
+MX_Master_3.cfg:
 CID  | reprog? | fn key? | mouse key? | gesture support?
 0x50 |         |         | YES        | 
 0x51 |         |         | YES        | 
@@ -14,3 +15,15 @@ Thumb wheel detected (0x2150), capabilities:
 timestamp | touch | proximity | single tap
 YES       | YES   | YES       | YES       
 Thumb wheel resolution: native (18), diverted (120)
+
+MX_Anywhere_2S.cfg:
+[DEBUG] /dev/hidraw1:2 remappable buttons:
+[DEBUG] CID  | reprog? | fn key? | mouse key? | gesture support?
+[DEBUG] 0x50 |         |         | YES        | 
+[DEBUG] 0x51 |         |         | YES        | 
+[DEBUG] 0x52 | YES     |         | YES        | YES
+[DEBUG] 0x53 | YES     |         | YES        | YES
+[DEBUG] 0x56 | YES     |         | YES        | YES
+[DEBUG] 0x5b | YES     |         | YES        | YES
+[DEBUG] 0x5d | YES     |         | YES        | YES
+[DEBUG] 0xd7 | YES     |         |            | YES
