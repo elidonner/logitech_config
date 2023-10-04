@@ -1,0 +1,5 @@
+sudo systemctl disable --now logid
+
+sudo rm /usr/local/bin/logid
+sudo rm /lib/systemd/system/logid.service
+sudo rm /etc/logid.cfg

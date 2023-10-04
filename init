@@ -1,0 +1,28 @@
+if [ "$(basename "$PWD")" = "logitech_config" ]; then
+
+   sudo -v -p "Please enter the password for ${USER} so init can do its thing: "
+
+   sudo cp logid.cfg /etc/
+
+   #install requirements
+   sudo apt install build-essential cmake pkg-config libevdev-dev libudev-dev libconfig++-dev libglib2.0-dev
+
+   #clone logiops repo into home directory
+   cd ~
+   git clone git@github.com:PixlOne/logiops.git
+   cd logiops
+
+   #build logiops
+   mkdir -p build
+   cd build
+   cmake -DCMAKE_BUILD_TYPE=Release ..
+   make
+   sudo make install
+
+   #enable the service
+   systemctl enable --now logid
+
+   echo "All done!"
+else
+   echo "cd into logitech_config"
+fi

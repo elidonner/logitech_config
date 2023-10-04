@@ -6,7 +6,7 @@ https://github.com/PixlOne/logiops/tree/main
 
 for building the app.
 
-After running `sudo systemcctl enable --now logid`.
+After running `sudo systemctl enable --now logid`.
 
 Default location is `/etc/logid.cfg` but you can run `sudo logid -c /filepath` to choose a different location. I don't know how to make it do this on system reboot without having default file in `/etc/logid.cfg`.
 
