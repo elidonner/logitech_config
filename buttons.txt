@@ -1,5 +1,6 @@
 Following reprogramable buttons were seen by running:
-sudo logid -v -c /filepath
+stopping service: sudo systemctl stop logid
+sudo logid -v
 
 MX_Master_3.cfg:
 CID  | reprog? | fn key? | mouse key? | gesture support?
@@ -27,3 +28,21 @@ MX_Anywhere_2S.cfg:
 [DEBUG] 0x5b | YES     |         | YES        | YES
 [DEBUG] 0x5d | YES     |         | YES        | YES
 [DEBUG] 0xd7 | YES     |         |            | YES
+
+MX Master 4 Mous config:
+[INFO] Device found: MX Master 4 on /dev/hidraw2:2
+[DEBUG] /dev/hidraw2:2 remappable buttons:
+[DEBUG] CID  | reprog? | fn key? | mouse key? | gesture support?
+[DEBUG] 0x50 |         |         | YES        |
+[DEBUG] 0x51 |         |         | YES        |
+[DEBUG] 0x52 | YES     |         | YES        | YES
+[DEBUG] 0x53 | YES     |         | YES        | YES
+[DEBUG] 0x56 | YES     |         | YES        | YES
+[DEBUG] 0xc3 | YES     |         | YES        | YES
+[DEBUG] 0xc4 | YES     |         | YES        | YES
+[DEBUG] 0xd7 | YES     |         |            | YES
+[DEBUG] 0x1a0 | YES     |         | YES        | YES
+[DEBUG] Thumb wheel detected (0x2150), capabilities:
+[DEBUG] timestamp | touch | proximity | single tap
+[DEBUG] YES       | YES   | NO        | NO
+[DEBUG] Thumb wheel resolution: native (20), diverted (120)
