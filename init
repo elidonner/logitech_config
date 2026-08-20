@@ -7,8 +7,7 @@ if [ "$(basename "$PWD")" = "logitech_config" ]; then
    #install requirements
    sudo apt install build-essential cmake pkg-config libevdev-dev libudev-dev libconfig++-dev libglib2.0-dev
 
-   #clone logiops repo into home directory
-   cd ~
+   # clone logiops repo into this dir, .gitignore ignores it
    git clone git@github.com:PixlOne/logiops.git
    cd logiops
 
